@@ -1,29 +1,279 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV | Desarrollador Cloud</title>
-    <style>
-        body { font-family: system-ui, sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 20px; background: #f4f7f6; }
-        header { border-bottom: 3px solid #232f3e; padding-bottom: 20px; }
-        h1 { color: #232f3e; margin: 0; }
-        .tag { background: #ff9900; color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.9em; }
-        section { margin-top: 30px; }
-        .job { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CV - Andrea Carolina Guillen Quiroz</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#f4f4f4;
+      padding:40px;
+      color:#222;
+    }
+
+    .cv-container{
+      max-width:1000px;
+      margin:auto;
+      background:white;
+      display:grid;
+      grid-template-columns: 35% 65%;
+      box-shadow:0 5px 20px rgba(0,0,0,0.1);
+      border-radius:10px;
+      overflow:hidden;
+    }
+
+    .left{
+      background:#1f2937;
+      color:white;
+      padding:40px 30px;
+    }
+
+    .right{
+      padding:40px;
+    }
+
+    .profile-img{
+      width:140px;
+      height:140px;
+      border-radius:50%;
+      background:#d1d5db;
+      margin:0 auto 25px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:14px;
+      color:#555;
+    }
+
+    h1{
+      font-size:30px;
+      margin-bottom:10px;
+      line-height:1.2;
+    }
+
+    .subtitle{
+      font-size:16px;
+      color:#d1d5db;
+      margin-bottom:30px;
+    }
+
+    .section{
+      margin-bottom:35px;
+    }
+
+    .section h2{
+      font-size:18px;
+      margin-bottom:15px;
+      color:#2563eb;
+      border-bottom:2px solid #2563eb;
+      padding-bottom:5px;
+      text-transform:uppercase;
+      letter-spacing:1px;
+    }
+
+    .left .section h2{
+      color:#93c5fd;
+      border-color:#93c5fd;
+    }
+
+    p{
+      line-height:1.6;
+      font-size:15px;
+    }
+
+    ul{
+      list-style:none;
+    }
+
+    ul li{
+      margin-bottom:10px;
+      line-height:1.5;
+      font-size:15px;
+    }
+
+    .job{
+      margin-bottom:25px;
+    }
+
+    .job h3{
+      font-size:17px;
+      margin-bottom:5px;
+      color:#111827;
+    }
+
+    .job span{
+      font-size:14px;
+      color:#6b7280;
+      display:block;
+      margin-bottom:10px;
+    }
+
+    .skills{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+
+    .skill{
+      background:#2563eb;
+      color:white;
+      padding:8px 12px;
+      border-radius:20px;
+      font-size:14px;
+    }
+
+    .contact p{
+      margin-bottom:12px;
+      word-break:break-word;
+    }
+
+    @media(max-width:768px){
+      .cv-container{
+        grid-template-columns:1fr;
+      }
+
+      .left, .right{
+        padding:30px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <header>
-        <h1>Alex Cloudborn</h1>
-        <p>Arquitecto de Soluciones <span class="tag">AWS Certified</span></p>
-    </header>
-    <section>
-        <h2>Experiencia Proyectada</h2>
-        <div class="job">
-            <h3>Ingeniero de Despliegue @ Edge Computing Ltd</h3>
-            <p>Especialista en reducir latencia mediante arquitecturas distribuidas con CloudFront y Lambda@Edge.</p>
+
+  <div class="cv-container">
+
+    <!-- COLUMNA IZQUIERDA -->
+    <div class="left">
+
+      <div class="profile-img">
+        FOTO
+      </div>
+
+      <h1>Andrea Carolina<br>Guillen Quiroz</h1>
+
+      <p class="subtitle">
+        Estudiante de Ingeniería de Software
+      </p>
+
+      <div class="section contact">
+        <h2>Contacto</h2>
+
+        <p>📞 (+34) 604379092</p>
+        <p>✉️ andrea.217200@gmail.com</p>
+      </div>
+
+      <div class="section">
+        <h2>Idiomas</h2>
+
+        <ul>
+          <li>🇪🇸 Español Nativo</li>
+          <li>🇬🇧 Inglés B2 - Cambridge English</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Conocimientos</h2>
+
+        <div class="skills">
+          <div class="skill">Java</div>
+          <div class="skill">Python</div>
+          <div class="skill">HTML</div>
+          <div class="skill">SQL</div>
+          <div class="skill">Git/GitHub</div>
+          <div class="skill">Ofimática</div>
         </div>
-    </section>
+      </div>
+
+    </div>
+
+    <!-- COLUMNA DERECHA -->
+    <div class="right">
+
+      <div class="section">
+        <h2>Perfil Profesional</h2>
+
+        <p>
+          Soy una persona comprometida y disciplinada, gracias a mi experiencia
+          con el deporte. Debido a mis estudios, he conseguido una amplia formación
+          en el ámbito del software, además de haber potenciado mi capacidad de
+          aprendizaje autónomo y el trabajo en equipo.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Experiencia Laboral</h2>
+
+        <div class="job">
+          <h3>Entrenadora de voleibol federado</h3>
+          <span>Club de Voleibol Coslada | 2023 - 2024</span>
+
+          <p>
+            Responsable de planificación de entrenamientos, de la fomentación
+            del compromiso y disciplina en niñas y de la coordinación de dos
+            equipos en entrenamientos y partidos.
+          </p>
+        </div>
+
+        <div class="job">
+          <h3>Árbitro de voleibol</h3>
+          <span>Federación Madrileña de Voleibol (FMVB) | 2024 - 2025</span>
+
+          <p>
+            Práctica de funciones arbitrales en competiciones oficiales y de
+            criterios y normas específicas de la competición. Además de la
+            toma de decisiones bajo presión.
+          </p>
+        </div>
+
+        <div class="job">
+          <h3>Entrenadora de voleibol</h3>
+          <span>IES Alameda de Osuna | 2023 - 2024</span>
+
+          <p>
+            Responsable de la preparación de entrenamientos y de grupos grandes
+            de adolescentes y de la formación en voleibol de principiantes.
+          </p>
+        </div>
+
+        <div class="job">
+          <h3>Profesora particular</h3>
+          <span>Matemáticas, Física y Química | 2023 - Actualidad</span>
+
+          <p>
+            Impartición de clases personalizadas en disciplinas científicas,
+            usando estrategias didácticas.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="section">
+        <h2>Formación</h2>
+
+        <div class="job">
+          <h3>Grado en Ingeniería de Software</h3>
+          <span>Universidad Politécnica de Madrid | 2023 - Actualidad</span>
+        </div>
+
+        <div class="job">
+          <h3>First Certificate in English (B2)</h3>
+          <span>Cambridge English | 2025</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
 </body>
 </html>
